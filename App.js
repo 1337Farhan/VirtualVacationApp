@@ -1,12 +1,12 @@
 
 import { TouchableOpacity, Image, StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export default function HomeScreen() {
   return (
     
     <View style={styles.container}>
       <View style={styles.Upper}>
-        <Image source={require('./assets/map.png')} />
+        <Image style={styles.Img} source={require('./assets/Top.png')} />
       </View>
       <View style={styles.Bottom}>
         <View style={styles.BottomLeft}>
@@ -18,7 +18,7 @@ export default function App() {
             style={styles.Button} 
             color={"#FFCA1D"}
           >
-            <Text style={styles.buttonText}>Get started</Text>
+            <Text style={styles.buttonText}>Get started now!</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -50,28 +50,32 @@ const styles = StyleSheet.create({
     alignItems: "stretch",
   },
   BottomLeft: {
-    height: "50%",
+    height: "100%",
     width: "50%",
-    // borderColor: "black",
-    // borderRadius: 0,
-    // borderWidth: 1,
     alignSelf: "flex-start",
     justifyContent: "center",
   },
   BottomRight: {
-    height: "50%",
+    height: "100%",
     width: "50%",
     alignSelf: "flex-end",
     justifyContent: "flex-start",
+    alignItems: "center",
+    paddingLeft: 50,
 
   },
   Button: {
+    justifyContent: "center",
+    height: 40,
+    width: 200,
     backgroundColor: "#FFCA1D",
     borderRadius: 20,
-    padding: 10,
+    margin: 50,
   },
   buttonText: {
+    fontSize: 18,
     fontWeight: "bold",
+    margin: 2,
     color: "black",
     textAlign: "center",
   },
@@ -80,7 +84,6 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
     fontWeight: "bold",
     marginBottom: 0,
-    marginTop: 25,
     marginHorizontal: 12,
     justifyContent: "flex-end"
   },
@@ -89,5 +92,10 @@ const styles = StyleSheet.create({
     fontStyle: "italic",
     margin: 12,
     justifyContent: "flex-end"
+  },
+  Img: {
+    resizeMode: "stretch",
+    height: "100%",
+    width: "100%",
   }
 });
