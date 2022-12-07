@@ -62,7 +62,6 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "center",
     paddingLeft: 50,
-
   },
   Button: {
     justifyContent: "center",
