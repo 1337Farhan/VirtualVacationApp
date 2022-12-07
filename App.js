@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CountriesScreen from './components/CountriesScreen';
 import HomeScreen from './components/HomeScreen';
+import VideoIframes from './components/VideoIframes';
 const Stack = createNativeStackNavigator();
 
 export default function MyStack() {
@@ -17,6 +18,11 @@ export default function MyStack() {
           <Stack.Screen
             name="CountriesScreen"
             component={CountriesScreen}
+            options={{ headerShown:false }}
+          />
+          <Stack.Screen
+            name="VideoIframes"
+            component={VideoIframes}
             options={{ headerShown:false }}
           />
       </Stack.Navigator>

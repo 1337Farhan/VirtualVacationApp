@@ -1,12 +1,11 @@
 import React from 'react'
 import { TouchableOpacity, Image, StyleSheet, Text, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import VideoIframes from './VideoIframes';
+import CountriesScreen from './CountriesScreen';
 
-export default function CountriesScreen() {
+export default function VideoIframes() {
   return (
     <View style={styles.container}>
-      <Image style={styles.Img} source={require('../assets/LightMap.png')} />
     </View>
   )
 }
@@ -17,8 +16,4 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-    Upper: {},
-    Bottom:{
-      
-    }
   });
